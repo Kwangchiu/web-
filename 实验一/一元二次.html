@@ -1,0 +1,33 @@
+<html lang = "en">
+    <head>
+        <title>welcome kwangchiu</title>
+        <meta charset = "utf-8">
+        <style>
+            body
+            {
+                background-image:url("b.JPG");
+                background-repeat:no-repeat;
+        </style>
+    </head>
+
+    <body>
+        <script type = "text/javascript">
+        var a,b,c,disc,x1,x2,p,q;
+        //a=1,b=2,c=-3;
+        var a = prompt("请输入a:");
+        var b = prompt("请输入b:");
+        var c = prompt("请输入c:");
+        disc=Math.pow(b,2)-4*a*c;
+        if(disc<0){
+        document.write('无实根');
+        }
+        else{
+            p=-b/(2*a);
+            q=Math.sqrt(disc)/(2*a);
+            x1=p+q;
+            x2=p-q;
+            document.write("两个根分别为："+x1+","+x2);
+    }
+        </script>
+    </body>
+</html>
