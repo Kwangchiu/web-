@@ -1,0 +1,91 @@
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title> Welcome to book seller </title>
+        <style>
+            body
+            {
+                background-image:url("b.jpg");
+                background-repeat:no-repeat;
+            }
+        </style>
+    </head>
+
+    <body>
+   
+    <form action = "personInfo.php" method = "post">
+        <p>
+            <h1> You r welcome </h1>
+        </p>
+        <!--创建输入框-->
+        <p>
+            please input your name:
+            <input = "text" name = "cname" size = "30"/>
+        </p>
+        <p>
+            please input your address:
+            <input = "text" name = "caddress" size = "30"/>
+        </p>
+        <p>
+            please input your zip:
+            <input = "text" name = "czip" size = "30"/>
+        </p>
+        <!--创建表格-->
+        <p> <h1>please fill in the quantity field of the following form </h1> </p>
+        <table border = "5">
+            <tr>
+                <td>book</td>
+                <td>publisher</td>
+                <td>price</td>
+                <td>quantity</td>
+            </tr>
+            <tr>
+                <td>Web technology</td>
+                <td>Springer press</td>
+                <td>$5.0</td>
+                <td>
+                    <input type = "text" name = "WT" size = "30"/>
+                </td>
+            </tr>
+            <tr>
+                <td>mathematics</td>
+                <td>ACM press</td>
+                <td>$6.2</td>
+                <td>
+                    <input type = "text" name = "MT" size = "30"/>
+                </td>
+            </tr>
+            <tr>
+                <td>principle of OS</td>
+                <td>Science press</td>
+                <td>$10</td>
+                <td>
+                    <input type = "text" name = "PO" size = "30"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Theory of matrix </td>
+                <td>High education press</td>
+                <td>$7.8</td>
+                <td>
+                    <input type = "text" name = "TM" size = "30"/>
+                </td>
+            </tr>
+        </table>
+        <p> <h1> payment method </h1></p>
+        <p>
+            <input type= "radio" name = "payment" value = "cash" checked = "checked"/>Cash<br>  
+            <input type= "radio" name = "payment" value = "cheque" checked = "checked"/>cheque<br>  
+            <input type= "radio" name = "payment" value = "credit card" checked = "checked"/>Credit card<br>  
+        </p>
+        <!--提交和重置按钮-->
+        <p>
+            <input type = "submit" value = "Submit"/>
+            <input type = "reset" value = "Reset"/>   
+        </p>
+        
+
+    </form>
+
+    </body>
+</html> 
